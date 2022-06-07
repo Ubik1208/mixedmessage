@@ -19,4 +19,11 @@ function mixWords() {
     return `${wordOne} ${wordTwo} ${wordThree}`
 }
 
-console.log(mixWords());
+let button = document.getElementById("btn");
+let phrase = document.getElementById("msg");
+
+//the function mixWords is called after clicking button
+
+button.onclick = () =>{
+    phrase.innerHTML = mixWords();
+}
