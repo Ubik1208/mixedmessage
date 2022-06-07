@@ -1,7 +1,7 @@
 //arrays with words example
-const podmiot = ['I', 'You', 'He', 'She', 'We', 'They'];
-const verb = [ 'go', 'do', 'ride', 'visit'];
-const dopelnienie = [ 'home', 'bank', 'school'];
+const podmiot = ['Dziś jest', 'Wczoraj był', 'Jutro będzie', 'Za rok będzie', 'Ju za godzinę będzie'];
+const verb = [ 'piękny dzień', 'miły poranek', 'deszczowy świt', 'mroczny zmierzch'];
+const dopelnienie = [ 'ale co mi tam', 'i tak warto tyć', 'a jutro będzie lepiej'];
 //pierwsza funkcja będzie się zajmować mieszaniem
 //druga funkcja będzie składać zdanie - moze mozna wykorzytsać getter
 function randomWord(wordArray) {
