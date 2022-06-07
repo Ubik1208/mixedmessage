@@ -1,12 +1,22 @@
 //arrays with words example
-const podmiot = ['Dziś jest', 'Wczoraj był', 'Jutro będzie', 'Za rok będzie', 'Ju za godzinę będzie'];
-const verb = [ 'piękny dzień', 'miły poranek', 'deszczowy świt', 'mroczny zmierzch'];
-const dopelnienie = [ 'ale co mi tam', 'i tak warto tyć', 'a jutro będzie lepiej'];
-//pierwsza funkcja będzie się zajmować mieszaniem
-//druga funkcja będzie składać zdanie - moze mozna wykorzytsać getter
+const phraseArrOne = ['Dziś jest', 'Wczoraj był', 'Jutro będzie', 'Za rok będzie', 'Juz za godzinę będzie'];
+const phraseArrTwo = [ 'piękny dzień', 'miły poranek', 'deszczowy świt', 'mroczny zmierzch'];
+const phraseArrThree = [ 'ale co mi tam', 'i tak warto tyć', 'a i tak będzie lepiej'];
+
+// the function below randomly choses one phrase from array
+
 function randomWord(wordArray) {
     let chosenWord = wordArray[Math.floor(Math.random()*wordArray.length)];
     return chosenWord;
 } 
 
-console.log(randomWord(podmiot));
+// the function below put three randomly chosen phrases together
+
+function mixWords() {
+    let wordOne = randomWord(phraseArrOne);
+    let wordTwo = randomWord(phraseArrTwo);
+    let wordThree = randomWord(phraseArrThree);
+    return `${wordOne} ${wordTwo} ${wordThree}`
+}
+
+console.log(mixWords());
