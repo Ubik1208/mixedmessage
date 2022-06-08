@@ -6,21 +6,21 @@ const phraseArrThree = [ 'ale co mi tam', 'i tak warto tyć', 'a i tak będzie l
 // the function below randomly choses one phrase from array
 
 function randomWord(wordArray) {
-    let chosenWord = wordArray[Math.floor(Math.random()*wordArray.length)];
+    const chosenWord = wordArray[Math.floor(Math.random()*wordArray.length)];
     return chosenWord;
 } 
 
 // the function below put three randomly chosen phrases together
 
 function mixWords() {
-    let wordOne = randomWord(phraseArrOne);
-    let wordTwo = randomWord(phraseArrTwo);
-    let wordThree = randomWord(phraseArrThree);
+    const wordOne = randomWord(phraseArrOne);
+    const wordTwo = randomWord(phraseArrTwo);
+    const wordThree = randomWord(phraseArrThree);
     return `${wordOne} ${wordTwo} ${wordThree}`
 }
 
-let button = document.getElementById("btn");
-let phrase = document.getElementById("msg");
+const button = document.getElementById("btn");
+const phrase = document.getElementById("msg");
 
 //the function mixWords is called after clicking button
 
